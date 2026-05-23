@@ -288,7 +288,7 @@ export default function Apply() {
                 <p className="text-sm text-[#5a6a7a] mb-3">
                   Reach out directly. We read every email.
                 </p>
-                <p className="text-sm text-[#1a2a4a] font-medium">academy@arcadianworks.in</p>
+                <p className="text-sm text-[#1a2a4a] font-medium">contact@jica.in</p>
               </div>
             </div>
           </div>

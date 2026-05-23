@@ -141,7 +141,7 @@ export default function Studio() {
                 </p>
                 <div className="bg-[#e8dcc8] rounded-lg p-4">
                   <p className="text-[#1a2a4a] text-sm font-medium mb-1">Client Contact</p>
-                  <p className="text-[#5a6a7a] text-sm">studio@arcadianworks.in</p>
+                  <p className="text-[#5a6a7a] text-sm">contact@jica.in</p>
                 </div>
               </div>
               <div>

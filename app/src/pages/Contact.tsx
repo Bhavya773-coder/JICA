@@ -20,25 +20,28 @@ export default function Contact() {
       <section className="py-16 md:py-24 bg-[#e8dcc8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6 mb-16">
-            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-              <div className="w-12 h-12 bg-[#1a2a4a] rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center flex flex-col items-center justify-center">
+              <div className="w-12 h-12 bg-[#1a2a4a] rounded-lg flex items-center justify-center mb-4">
                 <Mail className="w-6 h-6 text-[#b87333]" />
               </div>
               <h3 className="font-bold text-[#1a2a4a] mb-2">Email</h3>
-              <p className="text-[#5a6a7a] text-sm mb-1">Admissions & General</p>
-              <p className="text-[#1a2a4a] font-medium text-sm">academy@arcadianworks.in</p>
-              <p className="text-[#5a6a7a] text-sm mt-3 mb-1">Studio & Clients</p>
-              <p className="text-[#1a2a4a] font-medium text-sm">studio@arcadianworks.in</p>
+              <p className="text-[#5a6a7a] text-sm mb-1">General & Client Queries</p>
+              <p className="text-[#1a2a4a] font-medium text-sm">contact@jica.in</p>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-              <div className="w-12 h-12 bg-[#1a2a4a] rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center flex flex-col items-center justify-center">
+              <div className="w-12 h-12 bg-[#1a2a4a] rounded-lg flex items-center justify-center mb-4">
                 <MapPin className="w-6 h-6 text-[#b87333]" />
               </div>
-              <h3 className="font-bold text-[#1a2a4a] mb-2">Location</h3>
-              <p className="text-[#1a2a4a] font-medium text-sm">Jamnagar, Gujarat</p>
-              <p className="text-[#5a6a7a] text-sm mt-2">India</p>
-              <p className="text-[#5a6a7a] text-xs mt-3">Small boutique studio space. 20 seats. 6 GPU machines.</p>
+              <h3 className="font-bold text-[#1a2a4a] mb-2">Address</h3>
+              <p className="text-[#1a2a4a] font-medium text-xs max-w-[240px] leading-relaxed">
+                ARCADIA SHIPPING & TRADING CO.<br />
+                VINIT ARVINDBHAI SHAH<br />
+                5TH FLOOR, CITYPOINT, OPP-TOWNHALL, JAMNAGAR - 361000
+              </p>
+              <p className="text-[#5a6a7a] text-xs mt-2 font-semibold">
+                Phone: 7707808080
+              </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
