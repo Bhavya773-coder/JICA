@@ -6,10 +6,13 @@ export default function Footer() {
     <footer className="bg-[#1a2a4a] text-white/60 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <img src={logo} alt="JICA Logo" className="w-8 h-8 object-contain" />
-              <span className="text-white font-bold text-sm">JICA</span>
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="JICA Logo" className="w-24 h-24 object-contain transition-transform duration-300 hover:scale-105" />
+              <div className="flex flex-col">
+                <span className="text-white font-extrabold text-base tracking-wider leading-none">JICA</span>
+                <span className="text-[#9ab] text-[10px] tracking-wide mt-1">Cinema & AI</span>
+              </div>
             </div>
             <p className="text-sm">A fun play incubator for young creators. Hard-bound books. Real machines. Real work.</p>
           </div>

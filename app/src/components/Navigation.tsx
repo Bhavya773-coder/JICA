@@ -19,12 +19,12 @@ export default function Navigation() {
   return (
     <nav className="sticky top-0 z-50 bg-[#1a2a4a] shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between py-2 md:py-3">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="JICA Logo" className="w-9 h-9 object-contain" />
-            <div>
-              <span className="text-white font-bold text-sm tracking-wider">JICA</span>
-              <span className="hidden sm:inline text-[#9ab] text-xs ml-2">Jamnagar Institute of Cinematic AI</span>
+            <img src={logo} alt="JICA Logo" className="w-24 h-24 md:w-32 md:h-32 object-contain transition-transform duration-300 hover:scale-105" />
+            <div className="flex flex-col">
+              <span className="text-white font-extrabold text-base md:text-lg tracking-wider leading-none">JICA</span>
+              <span className="hidden sm:inline text-[#9ab] text-[10px] tracking-wide mt-1">Jamnagar Institute of Cinema & AI</span>
             </div>
           </Link>
 

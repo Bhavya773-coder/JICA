@@ -1,4 +1,4 @@
-import { BookOpen, Cpu, Users, Target, Lightbulb, Building2 } from 'lucide-react'
+import { BookOpen, Cpu, Users, Target, Lightbulb, Building2, Crown, Clapperboard, Tv, Headphones } from 'lucide-react'
 
 const values = [
   { icon: <BookOpen className="w-6 h-6" />, title: 'Hard-Bound Books', desc: 'Tactile learning. Weight in your hands. We believe the physical book creates focus that screens cannot.' },
@@ -10,9 +10,28 @@ const values = [
 ]
 
 const team = [
-  { role: 'Cinema Head', desc: 'Veteran filmmaker. Teaches Month 1: storytelling, direction, shot language, performance.' },
-  { role: 'AI Lead', desc: 'Technical architect. Manages 17 GPU machines, ComfyUI pipelines, LoRA training systems.' },
-  { role: 'Studio Manager', desc: 'International client relations. UK and European VFX contracts. Real commercial work.' },
+  {
+    name: 'Vinit Arvind Shah',
+    role: 'Founder',
+    desc: 'Vinit Arvind Shah is the founder behind the vision of JICA, with a mission to create a modern platform for cinematic education and technological innovation in Gujarat. Focused on empowering future filmmakers and creators, he supports the development of advanced learning infrastructure combining filmmaking, artificial intelligence, and practical industry-oriented training.',
+    icon: <Crown className="w-6 h-6 text-[#b87333]" />
+  },
+  {
+    name: 'Krishang Vadgama',
+    role: 'Director',
+    desc: 'Leading the vision and creative direction of JICA, Krishang specializes in AI-powered filmmaking, cinematic storytelling, virtual production, and modern film education. He oversees institute development, film production workflows, creative strategy, and student mentorship while building a next-generation ecosystem where cinema and artificial intelligence merge together.',
+    icon: <Clapperboard className="w-6 h-6 text-[#b87333]" />
+  },
+  {
+    role: 'Studio & Virtual Production Manager',
+    desc: 'Responsible for managing JICA’s professional green screen studios, virtual production environments, AI visual labs, production equipment, and practical filmmaking sessions. Ensures seamless studio operations, cinematic lighting setups, technical supervision, and hands-on learning experiences for students during shoots and post-production workflows.',
+    icon: <Tv className="w-6 h-6 text-[#b87333]" />
+  },
+  {
+    role: 'Audio & Dubbing Engineer',
+    desc: 'Managing JICA’s professional dubbing studio, sound recording sessions, dialogue editing, voice production, audio mixing, and cinematic sound workflows. Specializes in delivering industry-standard audio experiences while guiding students through modern sound design and post-production techniques.',
+    icon: <Headphones className="w-6 h-6 text-[#b87333]" />
+  }
 ]
 
 export default function About() {
@@ -123,15 +142,45 @@ export default function About() {
       {/* Team */}
       <section className="py-16 md:py-24 bg-[#e8dcc8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1a2a4a] text-center mb-12">The Team</h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#1a2a4a] text-center mb-12">Meet the Team</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {team.map((member, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 text-center shadow-sm">
-                <div className="w-16 h-16 bg-[#1a2a4a] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-[#b87333] font-bold text-xl">{member.role.charAt(0)}</span>
+              <div
+                key={i}
+                className="group relative bg-[#1a2a4a] text-white rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border border-white/5 hover:border-[#b87333]/50 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-white/5 group-hover:bg-[#b87333]/10 rounded-xl flex items-center justify-center transition-colors border border-white/10 group-hover:border-[#b87333]/30">
+                      {member.icon}
+                    </div>
+                    <span className="text-[10px] font-semibold text-[#b87333] tracking-widest uppercase bg-[#b87333]/10 px-2.5 py-1 rounded-full border border-[#b87333]/20">
+                      {member.name ? 'Leadership' : 'Specialist'}
+                    </span>
+                  </div>
+
+                  {member.name ? (
+                    <>
+                      <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#b87333] transition-colors">
+                        {member.name}
+                      </h3>
+                      <p className="text-white/40 text-xs font-medium tracking-wider uppercase mb-4">
+                        {member.role}
+                      </p>
+                    </>
+                  ) : (
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#b87333] transition-colors leading-snug">
+                      {member.role}
+                    </h3>
+                  )}
+
+                  <p className="text-white/70 text-sm leading-relaxed font-light">
+                    {member.desc}
+                  </p>
                 </div>
-                <h3 className="font-bold text-[#1a2a4a] mb-2">{member.role}</h3>
-                <p className="text-[#5a6a7a] text-sm">{member.desc}</p>
+                
+                {/* Decorative bottom border on hover */}
+                <div className="w-0 group-hover:w-full h-[3px] bg-gradient-to-r from-transparent via-[#b87333] to-transparent absolute bottom-0 left-0 transition-all duration-500 rounded-b-2xl" />
               </div>
             ))}
           </div>
