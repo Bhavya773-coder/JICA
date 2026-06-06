@@ -36,7 +36,6 @@ export default function Contact() {
               <h3 className="font-bold text-[#1a2a4a] mb-2">Address</h3>
               <p className="text-[#1a2a4a] font-medium text-xs max-w-[240px] leading-relaxed">
                 ARCADIA SHIPPING & TRADING CO.<br />
-                VINIT ARVINDBHAI SHAH<br />
                 5TH FLOOR, CITYPOINT, OPP-TOWNHALL, JAMNAGAR - 361000
               </p>
               <p className="text-[#5a6a7a] text-xs mt-2 font-semibold">

@@ -38,7 +38,6 @@ export default function Footer() {
               <span className="block text-white font-medium">contact@jica.in</span>
               <span className="block text-xs leading-relaxed">
                 ARCADIA SHIPPING & TRADING CO.<br />
-                VINIT ARVINDBHAI SHAH<br />
                 5th Floor, Citypoint, Opp-Townhall,<br />
                 Jamnagar - 361000<br />
                 Phone: 7707808080
