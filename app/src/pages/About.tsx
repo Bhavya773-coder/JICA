@@ -1,4 +1,4 @@
-import { BookOpen, Cpu, Users, Target, Lightbulb, Building2, Crown, Clapperboard, Tv, Headphones } from 'lucide-react'
+import { BookOpen, Cpu, Users, Target, Lightbulb, Building2, Clapperboard, Tv, Headphones } from 'lucide-react'
 
 const values = [
   { icon: <BookOpen className="w-6 h-6" />, title: 'Hard-Bound Books', desc: 'Tactile learning. Weight in your hands. We believe the physical book creates focus that screens cannot.' },
@@ -10,12 +10,6 @@ const values = [
 ]
 
 const team = [
-  {
-    name: 'Vinit Arvind Shah',
-    role: 'Founder',
-    desc: 'Vinit Arvind Shah is the founder behind the vision of JICA, with a mission to create a modern platform for cinematic education and technological innovation in Gujarat. Focused on empowering future filmmakers and creators, he supports the development of advanced learning infrastructure combining filmmaking, artificial intelligence, and practical industry-oriented training.',
-    icon: <Crown className="w-6 h-6 text-[#b87333]" />
-  },
   {
     name: 'Krishang Vadgama',
     role: 'Director',
