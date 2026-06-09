@@ -1,5 +1,7 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, BookOpen, Cpu, Users, Zap, Award, TrendingUp, Star } from 'lucide-react'
+import useSEO from '@/hooks/useSEO'
 
 const scholarshipTiers = [
   { rank: 'Top 1%', recovery: '100%', label: 'Platinum' },
@@ -16,6 +18,63 @@ const testimonials = [
 ]
 
 export default function Home() {
+  useSEO({
+    title: "JICA | Jamnagar Institute of Cinema & AI - India's First AI Cinema Incubator",
+    description: "JICA is a boutique AI cinema incubator in Jamnagar, India. Learn AI tools, prompt engineering, LoRA training, and virtual production with RTX 3090 GPUs and 50-100% scholarship recovery.",
+    keywords: "JICA, JICA Jamnagar, Jamnagar Institute of Cinema & AI, AI Cinema Jamnagar, JICA in Jamnagar, Learn AI Cinema, Indian AI Film Incubator, VFX Jamnagar, Krishang Vadgama JICA"
+  })
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.id = 'ld-json-schema'
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": ["EducationalOrganization", "LocalBusiness"],
+      "name": "JICA - Jamnagar Institute of Cinema & AI",
+      "alternateName": "Jamnagar Institute of Cinema & AI",
+      "description": "India's first play incubator and studio for young creators merging cinema and artificial intelligence. 20 seats per batch, hard-bound books, and 6 RTX 3090 GPU workstations.",
+      "url": window.location.origin,
+      "logo": window.location.origin + "/src/assets/logo.png",
+      "image": window.location.origin + "/src/assets/logo.png",
+      "telephone": "+91-7707808080",
+      "email": "contact@jica.in",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ARCADIA SHIPPING & TRADING CO., 5th Floor, Citypoint, Opp-Townhall",
+        "addressLocality": "Jamnagar",
+        "addressRegion": "Gujarat",
+        "postalCode": "361000",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "22.4707",
+        "longitude": "70.0577"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    })
+    document.head.appendChild(script)
+    return () => {
+      const existingScript = document.getElementById('ld-json-schema')
+      if (existingScript) {
+        existingScript.remove()
+      }
+    }
+  }, [])
+
   return (
     <div>
       {/* Hero */}

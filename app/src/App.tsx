@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Courses from './pages/Courses'
@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="min-h-screen bg-[#e8dcc8] text-[#1a2a4a] font-sans">
         <Navigation />
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 

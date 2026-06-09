@@ -1,4 +1,5 @@
 import { Cpu, Globe, HardDrive, Zap, Server, Clock, Shield } from 'lucide-react'
+import useSEO from '@/hooks/useSEO'
 
 const services = [
   { icon: <Cpu className="w-5 h-5" />, title: 'AI Character Generation', desc: 'Consistent characters across frames using custom LoRA pipelines.' },
@@ -17,6 +18,12 @@ const pipelineSteps = [
 ]
 
 export default function Studio() {
+  useSEO({
+    title: "JICA AI & VFX Studio | Virtual Production & Character Generation",
+    description: "JICA operates a professional AI & VFX Studio in Jamnagar, Gujarat. 17x RTX 3090 GPU pipeline delivering temporal motion synthesis, consistent AI characters, and custom LoRA training for UK and European clients.",
+    keywords: "AI VFX Studio, JICA Studio, Virtual Production Jamnagar, AI Character Generation, LoRA Training Service, Batch Frame Processing, Indian VFX Outpost"
+  })
+
   return (
     <div>
       {/* Hero */}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle, Clock, BookOpen, Cpu, Award, Zap, TrendingUp } from 'lucide-react'
+import useSEO from '@/hooks/useSEO'
 
 const quickCreatorModules = [
   'Week 1: AI Foundations & First Images',
@@ -40,6 +41,12 @@ const mastersMonth3 = [
 ]
 
 export default function Courses() {
+  useSEO({
+    title: "AI Cinema & VFX Courses in Jamnagar | JICA Programs",
+    description: "Explore JICA's AI Cinema programs. Join our 8-week Quick Creator course or the 3-month Masters in AI Cinema. Real GPU workstation training with up to 100% fee recovery.",
+    keywords: "AI Cinema Course, VFX Course Jamnagar, JICA Courses, Learn ComfyUI, ControlNet Training, Prompt Engineering Gujarat, Film School Jamnagar"
+  })
+
   return (
     <div>
       {/* Hero */}

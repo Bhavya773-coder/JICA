@@ -1,4 +1,5 @@
 import { BookOpen, Cpu, Users, Target, Lightbulb, Building2, Clapperboard, Tv, Headphones } from 'lucide-react'
+import useSEO from '@/hooks/useSEO'
 
 const values = [
   { icon: <BookOpen className="w-6 h-6" />, title: 'Hard-Bound Books', desc: 'Tactile learning. Weight in your hands. We believe the physical book creates focus that screens cannot.' },
@@ -29,6 +30,12 @@ const team = [
 ]
 
 export default function About() {
+  useSEO({
+    title: "About JICA | Jamnagar Institute of Cinema & AI - Our Story & Philosophy",
+    description: "Discover the story of JICA (Jamnagar Institute of Cinema & AI). Learn about our 20-seat batch size, 6 GPU workstations, team, and three-armed creative model (Institute, Pipeline, and Studio).",
+    keywords: "About JICA, JICA Jamnagar, Jamnagar Institute of Cinema, Krishang Vadgama JICA, AI Film Team, Cinema and AI, JICA History, AI Cinema Gujarat"
+  })
+
   return (
     <div>
       {/* Hero */}

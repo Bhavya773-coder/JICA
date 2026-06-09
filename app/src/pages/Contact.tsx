@@ -1,7 +1,14 @@
 import { Mail, MapPin, Phone, Clock, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import useSEO from '@/hooks/useSEO'
 
 export default function Contact() {
+  useSEO({
+    title: "Contact JICA Jamnagar | Location, Email & Admissions Support",
+    description: "Get in touch with the Jamnagar Institute of Cinema & AI (JICA). Find our address, phone number, email, and response times. Located in Citypoint, Jamnagar.",
+    keywords: "Contact JICA, JICA Jamnagar Phone, JICA Address, Jamnagar Cinema Institute Location, Arcadia Shipping Jamnagar, Contact Krishang Vadgama"
+  })
+
   return (
     <div>
       {/* Hero */}

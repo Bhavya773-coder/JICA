@@ -1,9 +1,16 @@
 import { useState } from 'react'
 import { ArrowRight, Users, BookOpen, Cpu, CheckCircle, AlertCircle } from 'lucide-react'
+import useSEO from '@/hooks/useSEO'
 
 type CourseOption = 'quick' | 'masters' | ''
 
 export default function Apply() {
+  useSEO({
+    title: "Apply to JICA | Join India's Premier AI Cinema & Film Incubator",
+    description: "Submit your application to the Jamnagar Institute of Cinema & AI (JICA). 20 seats per batch. Choose between the 8-week Quick Creator or 3-month Masters programs.",
+    keywords: "Apply JICA, JICA Admissions, Cinema School Jamnagar, AI Film Scholarship, Learn Filmmaking Gujarat, RTX 3090 Lab Admission"
+  })
+
   const [form, setForm] = useState({
     fullName: '',
     email: '',
