@@ -35,8 +35,8 @@ export default function Home() {
       "alternateName": "Jamnagar Institute of Cinema & AI",
       "description": "India's first play incubator and studio for young creators merging cinema and artificial intelligence. 20 seats per batch, hard-bound books, and 6 RTX 3090 GPU workstations.",
       "url": window.location.origin,
-      "logo": window.location.origin + "/src/assets/logo.png",
-      "image": window.location.origin + "/src/assets/logo.png",
+      "logo": window.location.origin + "/src/assets/jica-logo.png",
+      "image": window.location.origin + "/src/assets/jica-logo.png",
       "telephone": "+91-7707808080",
       "email": "contact@jica.in",
       "address": {
