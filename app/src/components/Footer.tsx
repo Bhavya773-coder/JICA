@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="space-y-2">
               <span className="block text-sm">20 seats per batch</span>
               <span className="block text-sm">Hard-bound books</span>
-              <span className="block text-sm">6 GPU machines</span>
+              <span className="block text-sm">Studio GPU machines</span>
             </div>
           </div>
           <div>

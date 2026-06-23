@@ -73,7 +73,7 @@ export default function Apply() {
             Apply for <span className="text-[#b87333]">Next Batch</span>
           </h1>
           <p className="text-white/60 max-w-2xl text-lg">
-            20 seats per batch. Small. Intimate. We review every application personally.
+            20 seats per batch. Focused. Intimate. We review every application personally.
           </p>
         </div>
       </section>

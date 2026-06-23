@@ -20,7 +20,7 @@ const testimonials = [
 export default function Home() {
   useSEO({
     title: "JICA | Jamnagar Institute of Cinema & AI - India's First AI Cinema Incubator",
-    description: "JICA is a boutique AI cinema incubator in Jamnagar, India. Learn AI tools, prompt engineering, LoRA training, and virtual production with RTX 3090 GPUs and 50-100% scholarship recovery.",
+    description: "JICA is a premier AI cinema incubator in Jamnagar, India. Learn AI tools, prompt engineering, LoRA training, and virtual production with RTX 3090 GPUs and 50-100% scholarship recovery.",
     keywords: "JICA, JICA Jamnagar, Jamnagar Institute of Cinema & AI, AI Cinema Jamnagar, JICA in Jamnagar, Learn AI Cinema, Indian AI Film Incubator, VFX Jamnagar, Krishang Vadgama JICA"
   })
 
@@ -33,7 +33,7 @@ export default function Home() {
       "@type": ["EducationalOrganization", "LocalBusiness"],
       "name": "JICA - Jamnagar Institute of Cinema & AI",
       "alternateName": "Jamnagar Institute of Cinema & AI",
-      "description": "India's first play incubator and studio for young creators merging cinema and artificial intelligence. 20 seats per batch, hard-bound books, and 6 RTX 3090 GPU workstations.",
+      "description": "India's first play incubator and studio for young creators merging cinema and artificial intelligence. 20 seats per batch, hard-bound books, and powerful studio GPU workstations.",
       "url": window.location.origin,
       "logo": window.location.origin + "/src/assets/jica-logo.png",
       "image": window.location.origin + "/src/assets/jica-logo.png",
@@ -137,15 +137,15 @@ export default function Home() {
               <div className="w-12 h-12 bg-[#1a2a4a] rounded-lg flex items-center justify-center mb-5">
                 <Cpu className="w-6 h-6 text-[#b87333]" />
               </div>
-              <h3 className="text-lg font-bold text-[#1a2a4a] mb-2">6 GPU Machines</h3>
-              <p className="text-[#5a6a7a] text-sm">Real RTX 3090 workstations. Not cloud credits. You sit at the machine. You train your own LoRA models.</p>
+              <h3 className="text-lg font-bold text-[#1a2a4a] mb-2">High-End Studio GPUs</h3>
+              <p className="text-[#5a6a7a] text-sm">Access to our powerful studio workstations. Not cloud credits. Train your own LoRA models using our high-end infrastructure.</p>
             </div>
             <div className="bg-white rounded-xl p-8 shadow-sm border border-[#1a2a4a]/5">
               <div className="w-12 h-12 bg-[#1a2a4a] rounded-lg flex items-center justify-center mb-5">
                 <Users className="w-6 h-6 text-[#b87333]" />
               </div>
               <h3 className="text-lg font-bold text-[#1a2a4a] mb-2">20 Seats Only</h3>
-              <p className="text-[#5a6a7a] text-sm">Small batch. Intimate. Everyone gets hands-on time. Everyone gets feedback. No one gets lost in the crowd.</p>
+              <p className="text-[#5a6a7a] text-sm">Focused batch. Intimate. Everyone gets hands-on time. Everyone gets feedback. No one gets lost in the crowd.</p>
             </div>
           </div>
 
@@ -276,7 +276,7 @@ export default function Home() {
             20 Seats. <span className="text-[#b87333]">One Batch at a Time.</span>
           </h2>
           <p className="text-white/60 mb-8 max-w-2xl mx-auto">
-            Small. Intimate. Real. You sit at the table, open the book, and create. GPU machines hum in the background. This is where Indian AI cinema begins.
+            Focused. Real. You sit at the table, open the book, and create. GPU machines hum in the background. This is where Indian AI cinema begins.
           </p>
           <Link
             to="/apply"

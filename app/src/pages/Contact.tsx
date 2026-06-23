@@ -67,7 +67,7 @@ export default function Contact() {
               Ready to <span className="text-[#b87333]">Apply?</span>
             </h2>
             <p className="text-white/60 max-w-xl mx-auto mb-8">
-              Next batch is forming now. 20 seats only. Small. Intimate. Real. Submit your application and we will review it personally.
+              Next batch is forming now. 20 seats only. Focused. Intimate. Real. Submit your application and we will review it personally.
             </p>
             <Link
               to="/apply"
@@ -96,11 +96,11 @@ export default function Contact() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <div className="flex items-center gap-2 mb-4">
                 <Mail className="w-5 h-5 text-[#b87333]" />
-                <span className="text-[#b87333] text-sm font-semibold tracking-wider">FOR CLIENTS</span>
+                <span className="text-[#b87333] text-sm font-semibold tracking-wider">STUDIO INQUIRIES</span>
               </div>
-              <h3 className="font-bold text-[#1a2a4a] mb-3">Need AI VFX work?</h3>
-              <p className="text-[#5a6a7a] text-sm mb-4">
-                We deliver AI character generation, motion synthesis, and batch frame processing for UK and European production houses. Boutique studio. Big output.
+              <h3 className="text-xl font-bold text-[#1a2a4a]">Collaborate with JICA</h3>
+              <p className="text-[#5a6a7a] leading-relaxed mb-6">
+                We deliver AI character generation, motion synthesis, and batch frame processing for independent film projects and local productions.
               </p>
               <Link to="/studio" className="text-[#b87333] font-semibold text-sm hover:underline inline-flex items-center gap-1">
                 View Studio Services <ArrowRight className="w-3.5 h-3.5" />

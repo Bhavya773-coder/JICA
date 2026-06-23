@@ -3,11 +3,11 @@ import useSEO from '@/hooks/useSEO'
 
 const values = [
   { icon: <BookOpen className="w-6 h-6" />, title: 'Hard-Bound Books', desc: 'Tactile learning. Weight in your hands. We believe the physical book creates focus that screens cannot.' },
-  { icon: <Cpu className="w-6 h-6" />, title: 'Real Machines', desc: '6 RTX 3090 GPU workstations. Not cloud credits. You sit at the machine. You train your own models.' },
-  { icon: <Users className="w-6 h-6" />, title: '20 Seats Only', desc: 'Small batch. Everyone gets hands-on time. Everyone gets feedback. Intimate, not industrial.' },
+  { icon: <Cpu className="w-6 h-6" />, title: 'Real Machines', desc: 'Access to powerful GPU workstations. Not cloud credits. Train models on our studio machines.' },
+  { icon: <Users className="w-6 h-6" />, title: '20 Seats Only', desc: 'Focused batch. Everyone gets hands-on time. Everyone gets feedback. Intimate, not industrial.' },
   { icon: <Target className="w-6 h-6" />, title: 'Ship Every Day', desc: 'Create, publish, compete. Daily public output. No theoretical exercises — only real production work.' },
   { icon: <Lightbulb className="w-6 h-6" />, title: 'Sell First, Build Second', desc: 'Every student must make a real sale. A real transaction. Real money changing hands. That is graduation.' },
-  { icon: <Building2 className="w-6 h-6" />, title: 'Three Arms', desc: 'Institute + GPU Training Pipeline + Studio. Students learn. Machines train at night. Studio serves international clients.' },
+  { icon: <Building2 className="w-6 h-6" />, title: 'Three Arms', desc: 'Institute + GPU Training Pipeline + Studio. Students learn. Machines train at night. Our studio produces independent AI cinema.' },
 ]
 
 const team = [
@@ -32,7 +32,7 @@ const team = [
 export default function About() {
   useSEO({
     title: "About JICA | Jamnagar Institute of Cinema & AI - Our Story & Philosophy",
-    description: "Discover the story of JICA (Jamnagar Institute of Cinema & AI). Learn about our 20-seat batch size, 6 GPU workstations, team, and three-armed creative model (Institute, Pipeline, and Studio).",
+    description: "Discover the story of JICA (Jamnagar Institute of Cinema & AI). Learn about our 20-seat batch size, high-end GPU workstations, team, and three-armed creative model (Institute, Pipeline, and Studio).",
     keywords: "About JICA, JICA Jamnagar, Jamnagar Institute of Cinema, Krishang Vadgama JICA, AI Film Team, Cinema and AI, JICA History, AI Cinema Gujarat"
   })
 
@@ -43,7 +43,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">The Story of <span className="text-[#b87333]">JICA</span></h1>
           <p className="text-white/60 max-w-2xl text-lg">
-            A small studio in Jamnagar, aspiring to be the home of India's AI-native filmmaking generation.
+            A premier studio in Jamnagar, aspiring to be the home of India's AI-native filmmaking generation.
           </p>
         </div>
       </section>
@@ -53,15 +53,15 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#1a2a4a] mb-4">The Honest Reality</h2>
+              <h2 className="text-3xl font-bold text-[#1a2a4a] mb-4">A Professional AI Cinema Studio</h2>
               <p className="text-[#5a6a7a] mb-4 leading-relaxed">
-                JICA is not a large institution. It is a small, intimate creative space — a boutique incubator where 20 students at a time learn the future of filmmaking.
+                JICA is a state-of-the-art creative space — a premier incubator where the next generation of filmmakers learn to harness the power of artificial intelligence.
               </p>
               <p className="text-[#5a6a7a] mb-4 leading-relaxed">
-                The studio has 6 GPU machines. Hard-bound books on the shelf. A long shared table where students sit together, open their field manuals, and create.
+                Our studio is equipped with powerful, dedicated GPU workstations. Students work in a professional environment, merging traditional filmmaking sensibilities with cutting-edge AI technology.
               </p>
               <p className="text-[#5a6a7a] leading-relaxed">
-                No fake grandeur. No pretending to be bigger than we are. Just honest work, real machines, and the best AI cinema education in India.
+                We deliver an elite AI cinema education, producing creators who are ready to lead the industry and deliver commercial-grade VFX and AI-generated content.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-sm">
@@ -76,13 +76,10 @@ export default function About() {
                   <span className="text-[#1a2a4a] font-medium">20 students</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-[#5a6a7a]">GPU Machines</span>
-                  <span className="text-[#1a2a4a] font-medium">6 (RTX 3090)</span>
+                  <span className="text-[#5a6a7a]">GPU Infrastructure</span>
+                  <span className="text-[#1a2a4a] font-medium">High-end Studio Machines</span>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-[#5a6a7a]">Total GPUs</span>
-                  <span className="text-[#1a2a4a] font-medium">17 (11 for studio)</span>
-                </div>
+
                 <div className="flex justify-between text-sm">
                   <span className="text-[#5a6a7a]">Learning Method</span>
                   <span className="text-[#1a2a4a] font-medium">Hard-bound books + GPU lab</span>
@@ -129,12 +126,12 @@ export default function About() {
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <div className="text-4xl font-bold text-[#b87333] mb-3">02</div>
               <h3 className="text-white font-bold text-lg mb-2">GPU Pipeline</h3>
-              <p className="text-white/60 text-sm">17 RTX 3090s. 6 for students by day. 11 train LoRA models overnight. ControlNet + MediaPipe + SDXL. The AI Actor Pipeline.</p>
+              <p className="text-white/60 text-sm">Powerful studio machines train LoRA models overnight. ControlNet + MediaPipe + SDXL. The AI Actor Pipeline.</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <div className="text-4xl font-bold text-[#b87333] mb-3">03</div>
               <h3 className="text-white font-bold text-lg mb-2">The Studio</h3>
-              <p className="text-white/60 text-sm">International VFX contracts. UK and European clients. Real commercial work. Students see real production. The studio funds the institute.</p>
+              <p className="text-white/60 text-sm">Real commercial projects. Students see real production workflows. The studio funds the institute.</p>
             </div>
           </div>
         </div>
@@ -144,7 +141,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-[#e8dcc8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#1a2a4a] text-center mb-12">Meet the Team</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {team.map((member, i) => (
               <div
                 key={i}
